@@ -1,0 +1,7 @@
+alias python="python3"
+
+. "$HOME/.cargo/env"
+export PATH="$PATH:$HOME/.poetry/bin"
+export PATH="$PATH:/usr/local/go/bin"
+export PATH="$PATH:$HOME/go/bin"
+
