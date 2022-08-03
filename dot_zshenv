@@ -1,9 +1,11 @@
 alias python="python3"
 
+# cargo: https://www.rust-lang.org/tools/install
 . "$HOME/.cargo/env"
+# poetry: https://go.dev/doc/install
 export PATH="$PATH:$HOME/.poetry/bin"
+# Golang: https://go.dev/doc/install
 export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:$HOME/go/bin"
-# See: https://cloud.google.com/blog/products/containers-kubernetes/kubectl-auth-changes-in-gke
+# gcloud auth plugin: https://cloud.google.com/blog/products/containers-kubernetes/kubectl-auth-changes-in-gke
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
-
