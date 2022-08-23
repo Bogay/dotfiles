@@ -122,4 +122,7 @@ eval "$(starship init zsh)"
 # AWS cli auto completion
 # https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-completion.html#cli-command-completion-linux
 complete -C '/usr/local/bin/aws_completer' aws
-
+# NVM: https://github.com/nvm-sh/nvm#installing-and-updating
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
