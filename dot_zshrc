@@ -77,6 +77,8 @@ plugins=(
 	docker-compose
 	kubectl
 	poetry
+	# https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/asdf
+	asdf
 )
 
 source $ZSH/oh-my-zsh.sh
