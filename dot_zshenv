@@ -4,8 +4,6 @@ alias python="python3"
 export PATH="$PATH:$HOME/.godot-bin"
 # cargo: https://www.rust-lang.org/tools/install
 . "$HOME/.cargo/env"
-# poetry: https://go.dev/doc/install
-export PATH="$PATH:$HOME/.poetry/bin"
 # Golang: https://go.dev/doc/install
 export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:$HOME/go/bin"
