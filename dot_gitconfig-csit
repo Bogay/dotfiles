@@ -1,0 +1,9 @@
+[user]
+name = Bo-Chieh Chuang
+email = bogay@cs.nctu.edu.tw
+
+[pull]
+rebase = true
+
+[core]
+hooksPath = ~/workspace/csit/githooks/
