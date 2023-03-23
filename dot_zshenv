@@ -1,13 +1,8 @@
 alias python="python3"
-
 # My path to godot editors
-export PATH="$PATH:$HOME/.godot-bin"
-# cargo: https://www.rust-lang.org/tools/install
-. "$HOME/.cargo/env"
-# Golang: https://go.dev/doc/install
-export PATH="$PATH:/usr/local/go/bin"
-export PATH="$PATH:$HOME/go/bin"
+[[ -d "$HOME/.godot-bin" ]] && export PATH="$PATH:$HOME/.godot-bin"
 # gcloud auth plugin: https://cloud.google.com/blog/products/containers-kubernetes/kubectl-auth-changes-in-gke
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 # krew: https://krew.sigs.k8s.io/docs/user-guide/setup/install/
-export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+KREW_ROOT="${KREW_ROOT:-$HOME/.krew}"
+[[ -d "$KREW_ROOT/bin" ]] && export PATH="$KREW_ROOT/bin:$PATH"
