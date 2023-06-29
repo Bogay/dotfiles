@@ -85,6 +85,7 @@ plugins=(
 	aws
 	poetry
 	pyenv
+	pip
 	rust
 	nvm
 	golang
