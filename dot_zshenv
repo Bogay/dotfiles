@@ -15,4 +15,8 @@ eval "$(pyenv init -)"
 # golang: https://go.dev/doc/install
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$HOME/go/bin
-
+# yarn
+export PATH="$PATH:$HOME/.yarn/bin"
+# Use Starship
+# https://starship.rs/guide/#step-2-setup-your-shell-to-use-starship
+eval "$(starship init zsh)"

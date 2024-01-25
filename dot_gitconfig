@@ -13,8 +13,5 @@
 [includeIf "gitdir:~/workspace/csit/"]
 	path = .gitconfig-csit
 
-[includeIf "gitdir:~/workspace/rayark/"]
-	path = .gitconfig-rayark
-
 [init]
-        defaultBranch = main
+	defaultBranch = main

@@ -127,6 +127,3 @@ fi
 # Auto completion
 autoload -U +X bashcompinit && bashcompinit
 
-# Use Starship
-# https://starship.rs/guide/#step-2-setup-your-shell-to-use-starship
-eval "$(starship init zsh)"
