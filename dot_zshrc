@@ -89,6 +89,7 @@ plugins=(
 	rust
 	nvm
 	golang
+	gh
 )
 
 source $ZSH/oh-my-zsh.sh
