@@ -2,7 +2,7 @@
 	email = pojay11523@gmail.com
 	name = bogay
 [core]
-	editor = vim
+	editor = hx
 	autocrlf = input
 [filter "lfs"]
 	clean = git-lfs clean -- %f
