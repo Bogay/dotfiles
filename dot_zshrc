@@ -84,7 +84,6 @@ plugins=(
 	gcloud
 	aws
 	poetry
-	pyenv
 	pip
 	rust
 	nvm
