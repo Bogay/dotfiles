@@ -1,18 +1,16 @@
 alias python="python3"
-# My path to godot editors
-[[ -d "$HOME/.godot-bin" ]] && export PATH="$PATH:$HOME/.godot-bin"
-# gcloud auth plugin: https://cloud.google.com/blog/products/containers-kubernetes/kubectl-auth-changes-in-gke
-export USE_GKE_GCLOUD_AUTH_PLUGIN=True
-# krew: https://krew.sigs.k8s.io/docs/user-guide/setup/install/
-KREW_ROOT="${KREW_ROOT:-$HOME/.krew}"
-[[ -d "$KREW_ROOT/bin" ]] && export PATH="$KREW_ROOT/bin:$PATH"
 # cargo: https://www.rust-lang.org/tools/install
 [[ -f "$HOME/.cargo/env" ]] && . "$HOME/.cargo/env"
 # golang: https://go.dev/doc/install
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$HOME/go/bin
-# yarn
-export PATH="$PATH:$HOME/.yarn/bin"
 # Use Starship
 # https://starship.rs/guide/#step-2-setup-your-shell-to-use-starship
 eval "$(starship init zsh)"
+# volta
+# https://docs.volta.sh/guide/getting-started
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
+# fzf
+# https://github.com/junegunn/fzf?tab=readme-ov-file#setting-up-shell-integration
+source <(fzf --zsh)
