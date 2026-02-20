@@ -129,18 +129,3 @@ fi
 
 # Auto completion
 autoload -U +X bashcompinit && bashcompinit
-
-# pnpm
-export PNPM_HOME="/home/bogay/.local/share/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
-
-# https://asdf-vm.com/guide/getting-started.html#_2-configure-asdf
-# asdf scripts need to be sourced after you have set your $PATH and
-# after you have sourced your framework (oh-my-zsh etc).
-export PATH="$HOME/.asdf/shims:$PATH"
-
-
